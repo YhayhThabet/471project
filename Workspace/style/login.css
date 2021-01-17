@@ -1,0 +1,134 @@
+@import url('reset.css'); /*style of login/logout page*/
+                              /*by M@rtin Bebey*/
+body /*style of body of page*/
+{
+    background-color: #413659;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;	
+    padding: 1em;
+    padding-top: 0.5em;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+#container 
+{
+    background-color: #656F8C;
+    border: 2px solid #656F8C;
+    border-radius: 10px;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+#header, #nav, #main /*main body components*/
+{
+    background-color: #F2EFDF;
+    padding: 0.5em;
+    margin: 0.4em;
+}
+
+#header img
+{
+    border: 0.4em solid #9BBFAB;
+    border-radius: 0.3em;
+    height: 7em;
+    float: left;
+    margin-right: 1em;
+}
+
+#nav /*style of navigation bar*/
+{
+	clear: left;
+	margin-right: 0px;
+	float: left;
+	width: 15%;
+	height: 649px;
+}
+
+#main
+{
+  height: 646px;
+}
+
+#nav ul li a /*stle of links in the navigation bar*/
+{
+	display: block;
+	margin: 0.5em;
+	border: 0.2em solid #413659;
+	border-radius: 0.2em;
+	font-size: 1.5em;
+	background-color: #9BBFAB;
+	color: #413659;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#nav ul li a:hover 
+{
+	border: 0.2em solid #9BBFAB;
+	color: #9BBFAB;
+	background-color: #413659;
+}
+
+.active /*style of the link of the actie page*/
+{
+	font-weight: bold;
+	text-decoration: underline;	
+}
+
+#header h2 
+{
+	font-size: 2em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+#header h3 
+{
+	font-size: 1.1em;
+}
+
+#header strong 
+{
+	color: #9BBFAB;
+	font-weight: bold;
+}
+
+#header 
+{
+	font-size: 1.2em;
+	overflow: hidden;
+}
+
+#main 
+{
+	margin-left: 0px;
+	float: right;
+	width: 81%;
+	font-size: 1.2em;
+}
+
+form /*style of the login/logout form*/
+{
+  border: 0.4em solid #9BBFAB;
+  width: 30%;
+  border-radius: 0.3em;
+  text-align: left;
+  margin-left: 24em;
+  margin-top: 1em;
+  padding: 1em;
+  
+}
+
+
+#footer /*style of footer of the page*/
+{
+	text-align: center;
+	clear: both;
+	font-style: italic;
+	color: #fff;	
+}
