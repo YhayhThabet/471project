@@ -12,7 +12,7 @@
     {
         $username = $_SESSION['username'];#get the username
         $signedIn = true;
-        $connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
+        //$connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
         $query = mysqli_query($connect, "SELECT * FROM images");
         while($img = mysqli_fetch_array($query))#get movie reel image
         {
@@ -55,8 +55,9 @@
                 {
                     echo '<li><a href="index.php">Home</a></li>';
                     echo '<li><a href="addVid.php"class="active">Add Video</a></li>';
-                    echo ' <li><a href="search.php">Search</a></li>';                    
+                    echo '<li><a href="search.php">Search</a></li>';                    
                     echo '<li><a href="logout.php">Logout</a></li>';
+                    echo '<li><a href="checkout.php">Check Out</a></li>';
                 }
                 
                 else

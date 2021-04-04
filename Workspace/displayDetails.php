@@ -25,7 +25,7 @@
     {
         $signedIn = true;
         $username = $_SESSION['username'];#get the username
-        $connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
+        //$connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
         $query = mysqli_query($connect, "SELECT * FROM images");
         while($img = mysqli_fetch_array($query))
         {
@@ -70,8 +70,8 @@
                     echo '<li><a href="index.php">Home</a></li>';
                     echo '<li><a href="addVid.php">Add Video</a></li>';
                     echo ' <li><a href="search.php">Search</a></li>';
-                    #echo '<li><a href="editVid.php">Edit Video</a></li>'; there's no edit page (in this assignment)
-                    #echo '<li><a href="displayDetails.php" class="active">Display Details</a></li>';
+                    echo '<li><a href="editVid.php">Edit Video</a></li>';
+                    echo '<li><a href="displayDetails.php" class="active">Display Details</a></li>';
                     echo '<li><a href="logout.php">Logout</a></li>';
                 }
                 

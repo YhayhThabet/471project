@@ -10,7 +10,7 @@
     $dbpass = "RNZHfeE^";#the password to connect to server
     $password = md5($password); #encrypt the password    
     
-    $connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
+    //$connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
     
     $query = mysqli_query($connect, "SELECT * FROM users WHERE username LIKE '$username' AND password LIKE '$password'");#validate credentials
     $row = mysqli_fetch_array($query);

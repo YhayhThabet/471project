@@ -129,7 +129,7 @@
         $hd = "img/cancelicon.png";
     }
     
-    $connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
+    //$connect = mysqli_connect('mysql.immortalfyre.com', mydb, $dbpass, mydb) or die("Could not connect to server");#connect to DB
     if(is_null($_GET['ids']))#if this is the first added movie
     {$ids = "ae7706bdc9bbc5bf4c4aaa809584f4833420";}#random encrypted password to be assigned to the movie (ending in 3420)
     while($query = mysqli_fetch_array(mysqli_query($connect, "SELECT * FROM MOVIES WHERE username LIKE '$username' AND id LIKE '$ids'")))#check if id exists
